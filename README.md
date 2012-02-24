@@ -1,4 +1,5 @@
-# winston-graylog2 >> A graylog2 transport for winston
+# winston_graylog2 
+_A graylog2 transport for winston_
 
 ## Install
 
