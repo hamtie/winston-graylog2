@@ -3,11 +3,8 @@ _A graylog2 transport for winston_
 
 ## Install
 
-From github:
-
 ```
-git clone git@github.com:fouasnon/winston-graylog2.git
-npm install ./winston-graylog2
+npm install winston-graylog2
 ```
 
 ## Usage
