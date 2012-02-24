@@ -1,0 +1,20 @@
+{
+  "name": "winston-graylog2",
+  "description": "A Graylog2 transport for winston",
+  "version": "0.1.0",
+  "author": "Hannah Fouasnon <hanelifou@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/fouasnon/winston-graylog2.git" 
+  },
+  "keywords": ["logging", "sysadmin", "tools", "winston", "graylog2"],
+  "dependencies": {
+    "winston": "0.5.x",
+    "compress-buffer": "0.5.x"
+  },
+  "devDependencies": {
+    "vows": "0.5.x"
+  },
+  "main": "./lib/graylog2",
+  "engines": { "node": ">= 0.4.0" }
+}
