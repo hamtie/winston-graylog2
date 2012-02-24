@@ -7,7 +7,6 @@ From github:
 ```
 git clone git@github.com:fouasnon/winston-graylog2.git
 npm install ./winston-graylog2
-
 ```
 
 ## Usage
@@ -25,7 +24,6 @@ var logger = new (winston.Logger)({
   levels: levels,
   transports: [new (graylog2)()]
 });
-
 ```
 
 The default winston logger settings should not be used because Graylog2
@@ -34,12 +32,13 @@ the same as other loggers.
 
 
 ## References
-winston `https://github.com/flatiron/winston`
-independent graylog2 module `http://github.com/egorFiNE/node-graylog`
-winston-riak transport `http://github.com/indexzero/winston-riak`
+1. winston `https://github.com/flatiron/winston`
+2. independent graylog2 module `http://github.com/egorFiNE/node-graylog`
+3. winston-riak transport `http://github.com/indexzero/winston-riak`
 
 ## Notes
 There is another winston-graylog2 module,
 `http://github.com/flite/winston-graylog2.git`, that was made
 independently. I opted to keep this repo separate for a few reasons,
-one of them being that only a subset of the syslog logging levels are exposed.
+one of them being that only a subset of the syslog logging levels are
+exposed in the other project.
