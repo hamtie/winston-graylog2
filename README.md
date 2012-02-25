@@ -2,13 +2,11 @@
 _A graylog2 transport for winston_
 
 ## Install
-
 ```
 npm install winston-graylog2
 ```
 
 ## Usage
-
 A convenience wrapper may be supported in the future but for now the
 easiest way to use `winston-graylog2` is to instantiate a new winston
 logger and add `winston-graylog2` as a transport.
@@ -18,15 +16,24 @@ var winston = require("winston"),
 graylog2 = require("winston-graylog2").Graylog2,
 levels = winston.config.syslog.levels;
 
+// Initialize logger
 var logger = new (winston.Logger)({
   levels: levels,
   transports: [new (graylog2)()]
 });
+
+// Log something
+logger.log('emerg', 'FIX THIS NOW');
+logger.emerg('NO RLY');
 ```
 
 The default winston logger settings should not be used because Graylog2
 expects the log levels to be syslog levels.  All else should function
 the same as other loggers.  
+
+## TODO
+1. Add chunking to messages
+2. More pleasant way to flatten meta fields without changing logger api
 
 ## References
 1. winston `https://github.com/flatiron/winston`
