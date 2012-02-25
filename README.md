@@ -28,11 +28,11 @@ The default winston logger settings should not be used because Graylog2
 expects the log levels to be syslog levels.  All else should function
 the same as other loggers.  
 
-
 ## References
 1. winston `https://github.com/flatiron/winston`
 2. independent graylog2 module `http://github.com/egorFiNE/node-graylog`
 3. winston-riak transport `http://github.com/indexzero/winston-riak`
+4. gelf spec `https://github.com/Graylog2/graylog2-docs/wiki/GELF`
 
 ## Notes
 There is another winston-graylog2 module,
