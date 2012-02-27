@@ -44,14 +44,14 @@ the same as other loggers.
 
 ## Notes
 There is another winston-graylog2 module,
-`http://github.com/flite/winston-graylog2.git`, that was made
+[http://github.com/flite/winston-graylog2.git][5], that was made
 independently. I opted to keep this repo separate for a few reasons,
 one of them being that only a subset of the syslog logging levels are
 exposed in the other project.
-
 
 [0]: https://github.com/flatiron/winston
 [1]: http://github.com/egorFiNE/node-graylog
 [2]: http://github.com/indexzero/winston-riak
 [3]: https://github.com/Graylog2/graylog2-docs/wiki/GELF
 [4]: http://www.graylog2.org
+[5]: http://github.com/flite/winston-graylog2.git
