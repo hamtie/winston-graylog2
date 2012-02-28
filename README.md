@@ -31,6 +31,14 @@ The default winston logger settings should not be used because Graylog2
 expects the log levels to be syslog levels.  All else should function
 the same as other loggers.  
 
+## Transport options
+1. host [value]: `'localhost'`
+2. port [value]: `12201`
+3. level [value]: `'info'`
+4. facility [value]: `'winston-graylog2'`
+5. timestamp [value or function]: `function() { ((new
+Date()).getTime()/1000).toFixed(2); };` (current time in seconds)
+
 ## TODO
 1. Add chunking to messages
 2. More pleasant way to flatten meta fields without changing logger api
