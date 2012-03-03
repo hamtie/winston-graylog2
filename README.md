@@ -31,6 +31,12 @@ The default winston logger settings should not be used because Graylog2
 expects the log levels to be syslog levels.  All else should function
 the same as other loggers.  
 
+### Meta data
+
+By default, the `pid` and `cwd` are added to the graylog meta fields.
+All other meta fields passed to winston get sent along in the meta
+data as well.
+
 ## Transport options
 1. host [value]: `'localhost'`
 2. port [value]: `12201`
